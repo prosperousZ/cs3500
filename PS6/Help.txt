@@ -1,0 +1,20 @@
+SpreadSheet Help
+
+Navigating the Spreadsheet:
+You can navigate the spreadsheet by clicking on a cell or using the arrowkeys
+Don't let the selection box go off screen. I don't know How to deal with it.
+
+Editing cell contents:
+Start typing! it should work. If it doesn't, try clicking on the box labeled CellContents
+to create a formula, prefix the formula with an "=".
+
+CellValues:
+Cellvalues are displayed in the box labeled "Cell="
+
+CellNames:
+the name of the currently selected cell is displayed in the box labeled "CellName"
+in the top left.
+
+File menu:
+The file menu allows you to create new sheets, open saved sheets, and save the currently active 
+spreadsheet. Closing all windows will close the application.

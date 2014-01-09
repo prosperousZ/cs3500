@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spreadsheet", "Spreadsheet\Spreadsheet.csproj", "{9101DA3B-F270-4282-A579-45E070453F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadsheetTests", "UnitTestProject1\SpreadsheetTests.csproj", "{6CAF4C72-CE5C-4229-8D0C-57B2D2DC60F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{63D6307C-D78D-491D-B121-32DD4A3A54FD}"
+	ProjectSection(SolutionItems) = preProject
+		Formula Evaluator.dll = Formula Evaluator.dll
+		Formula.dll = Formula.dll
+		Formula.XML = Formula.XML
+		README.txt = README.txt
+		SpreadsheetUtilities.dll = SpreadsheetUtilities.dll
+		SpreadsheetUtilities.XML = SpreadsheetUtilities.XML
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradingTests", "GradingTests\GradingTests.csproj", "{BCE2EFB6-9398-4CF0-8F3E-DC5A88A2EB50}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9101DA3B-F270-4282-A579-45E070453F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9101DA3B-F270-4282-A579-45E070453F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9101DA3B-F270-4282-A579-45E070453F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9101DA3B-F270-4282-A579-45E070453F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAF4C72-CE5C-4229-8D0C-57B2D2DC60F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAF4C72-CE5C-4229-8D0C-57B2D2DC60F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAF4C72-CE5C-4229-8D0C-57B2D2DC60F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAF4C72-CE5C-4229-8D0C-57B2D2DC60F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE2EFB6-9398-4CF0-8F3E-DC5A88A2EB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE2EFB6-9398-4CF0-8F3E-DC5A88A2EB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE2EFB6-9398-4CF0-8F3E-DC5A88A2EB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE2EFB6-9398-4CF0-8F3E-DC5A88A2EB50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

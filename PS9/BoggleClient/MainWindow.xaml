@@ -1,0 +1,57 @@
+﻿<Window x:Class="BoggleClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Boggle" Height="350" Width="422.5" Closed="CloseAndDispose">
+    <Viewbox Stretch="Fill">
+        <Grid>
+            <ScrollViewer HorizontalAlignment="Left" Height="220" Margin="253,90,0,0" VerticalAlignment="Top" Width="145" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled">
+                <TextBlock Name ="Wordlist" TextWrapping="Wrap" Text="" Background="AliceBlue" Height="220" FontFamily="Sakkal Majalla" />
+            </ScrollViewer>
+            <Label x:Name="LabelWordList" Content="WordList" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="288,65,0,0" VerticalAlignment="Top" Height="25" Width="100" FontSize="14" FontFamily="Showcard Gothic"/>
+            <TextBox Name ="Input" HorizontalAlignment="Left" Height="23" Margin="10,49,0,0" TextWrapping="Wrap" Text="localhost" VerticalAlignment="Top" Width="120" KeyUp="HandleKeyUp"/>
+            <Button Name ="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="135,50,0,0" VerticalAlignment="Top" Width="56" Click="SubmitClick" FontFamily="Poplar Std" FontSize="18"/>
+            <TextBlock x:Name="TimeLeft" HorizontalAlignment="Left" Margin="196,49,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="23" Width="57" FontSize="24" FontWeight="Bold" FontFamily="Stencil"/>
+            <Grid Name ="BoardView" HorizontalAlignment="Left" Height="225" Margin="10,90,0,0" VerticalAlignment="Top" Width="225" ShowGridLines="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Name="square1"  Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square2" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square3" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square4" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+
+                <TextBlock Name="square5" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square6" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square7" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square8" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+
+                <TextBlock Name="square9" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square10" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square11" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square12" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+
+                <TextBlock Name="square13" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square14" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square15" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+                <TextBlock Name="square16" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="36"/>
+            </Grid>
+            <TextBlock Name ="Status" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="238" Height="34" FontFamily="Palatino Linotype"/>
+            <TextBlock Name ="name1" Margin="253,10,0,0" TextWrapping="Wrap" Text="name1" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="75" Height="25" FontFamily="Ravie" FontSize="16"/>
+            <TextBlock Name ="name2" Margin="253,32,0,0" TextWrapping="Wrap" Text="name2" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="75" Height="25" FontFamily="Ravie" FontSize="16"/>
+            <TextBlock Name ="Score2" Margin="333,32,0,0" TextWrapping="Wrap" Text="score2" VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.5,0.5" Width="75" Height="25" FontFamily="Playbill" FontSize="24"/>
+            <TextBlock Name ="Score1" Margin="333,10,0,0" TextWrapping="Wrap" Text="score1" VerticalAlignment="Top" HorizontalAlignment="Left" Height="25" RenderTransformOrigin="0.5,0.5" Width="75" FontSize="24" FontFamily="Playbill"/>
+
+
+        </Grid>
+    </Viewbox>
+</Window>
